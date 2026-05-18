@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppExamen.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+          Padding="30,0"
+          Spacing="25">
+            <Label
+              Text="Bienvenido a la APP Vehículos"
+              FontSize="32"
+              HorizontalOptions="Center" />
+            <Label Text="Id"></Label>
+            <Entry x:Name="txtId" Placeholder="Ingrese el id del vehículo" />
+            <Label Text="Marca"></Label>
+            <Entry x:Name="txtMarca" Placeholder="Ingrese la marca del vehículo" />
+            <Label Text="Modelo"></Label>
+            <Entry x:Name="txtModelo" Placeholder="Ingrese el modelo del vehículo" />
+            <Label Text="Año"></Label>
+            <Entry x:Name="txtAnio" Placeholder="Ingrese el año del vehículo" Keyboard="Numeric"/>
+            <Button x:Name="cmdCrear" Text="Crear" Clicked="cmdCrear_Clicked"></Button>
+            <Button x:Name="cmdLeer" Text="Leer" Clicked="cmdLeer_Clicked"></Button>
+            <Button x:Name="cmdActualizar" Text="Actualizar" Clicked="cmdActualizar_Clicked"></Button>
+            <Button x:Name="cmdEliminar" Text="Eliminar" Clicked="cmdEliminar_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
